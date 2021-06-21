@@ -4,17 +4,110 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hotel_interfeys"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-         TextElement.FontWeight="Regular"
-         TextElement.FontSize="13"
-         TextOptions.TextFormattingMode="Ideal"
-         TextOptions.TextRenderingMode="Auto"
-         Background="{DynamicResource MaterialDesignPaper}"
-         FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Loaded="Window_Loaded"
+         
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+         WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        BorderThickness="0"
+        WindowState="Maximized"
+        Title="MainWindow" Height="700" Width="1200">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="drag_grid" Grid.Row="0"  Background="#FFFFFF">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Grid Grid.Column="0" Background="#E3ECEB">
+
+            </Grid>
+
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button  x:Name="minimize_btn" Click="minimize_btn_Click" Background="Transparent" Padding="0 5 0 0" Height="22" Width="25"  BorderThickness="0">
+                    <md:PackIcon  Kind="WindowMinimize"  FontWeight="ExtraBold" Foreground="#576673"  />
+                </Button>
+                <Button x:Name="maximize_btn" Click="maximize_btn_Click" Background="Transparent" Padding="0" Height="22" Width="25" BorderThickness="0">
+                    <md:PackIcon Name="maximize_icon" Kind="WindowMaximize"  FontWeight="ExtraBold" Foreground="#576673" />
+                </Button>
+                <Button x:Name="close_btn" Click="close_btn_Click" Height="22" Width="25" Padding="0" BorderThickness="0" Background="Transparent">
+                    <md:PackIcon Kind="WindowClose"  FontWeight="ExtraBold" Foreground="#576673"/>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+
+        <Grid Grid.Row="1" >
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Background="#E3ECEB">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!--maktab qismi-->
+
+                <Grid Grid.Row="0">
+                    <Separator VerticalAlignment="Bottom" Width="210" />
+                </Grid>
+
+
+                <!--menular qismi-->
+                <Grid Grid.Row="1">
+                    <StackPanel Margin="0 30 0 0 ">
+
+                        <Button x:Name="Registration"  Height="40" Margin="15 10 15 10" md:ShadowAssist.ShadowDepth="Depth4" Background="Transparent" md:ButtonAssist.CornerRadius="10" BorderThickness="0.1">
+                            <StackPanel Orientation="Horizontal">
+                                <md:PackIcon HorizontalAlignment="Left" Kind="RegisteredTrademark" Foreground="Black"  Height="35" Width="35"/>
+                                <TextBlock  Text="Registration" VerticalAlignment="Bottom" Foreground=" Black" Opacity="0.7" FontSize="22" Margin="10 0 10 0"/>
+                            </StackPanel>
+                        </Button>
+
+
+                        <Button x:Name="uqituvchilar_btn"  Height="40"  Margin="15 10 15 10" Background="Transparent" md:ButtonAssist.CornerRadius="10" BorderThickness="0.1">
+                            <StackPanel Orientation="Horizontal">
+                                <md:PackIcon  HorizontalAlignment="Left" Kind="Teacher" Foreground="Black" Height="35" Width="35"/>
+                                <TextBlock x:Name="uqituvchilar_txt" Text="O'qituvchilar" VerticalAlignment="Bottom" Foreground=" Black" Opacity="0.7" FontSize="22" Margin="10 0 10 0"/>
+                            </StackPanel>
+                        </Button>
+
+
+                        <Button x:Name="hisobot_btn"  Height="40"  Margin="15 10 15 10" Background="Transparent" md:ButtonAssist.CornerRadius="10" BorderThickness="0.1">
+                            <StackPanel Orientation="Horizontal" >
+                                <md:PackIcon  Margin="1 1 10 0 "  HorizontalAlignment="Left" Kind="Grade" Foreground="Black"  Height="35" Width="35"/>
+                                <TextBlock x:Name="hisobot_txt" Text="Hisobot" Margin="1 0 55 0" VerticalAlignment="Bottom" Foreground=" Black" Opacity="0.7" FontSize="22" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+
+
+
+            <!--o'qituvchilar qismi-->
+            <Grid x:Name="asosiy_oyna_grid" Grid.Column="1" >
+
+            </Grid>
+        </Grid>
+
 
     </Grid>
 </Window>
