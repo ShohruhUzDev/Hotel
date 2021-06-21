@@ -15,6 +15,8 @@ namespace Hotel_interfeys.Models
         public int Phone { get; set; }
         public int? RoomId { get; set; }
         public Room Room { get; set; }
+        public DateTime DateOfArrival { get; set; }
+        public DateTime DateOfDepartur { get; set; }
 
     }
 }
