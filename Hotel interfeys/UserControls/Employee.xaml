@@ -11,7 +11,7 @@
     <Grid>
         <StackPanel Background="#FFFFFF">
             <DockPanel Height="85">
-                <Button x:Name="CreateRoom_btn"  HorizontalAlignment="Right" BorderThickness="0.1"   Height="60" Margin="15 10 30 10"  Background="Transparent" md:ButtonAssist.CornerRadius="10" Width="70" RenderTransformOrigin="0.514,0.458" >
+                <Button x:Name="CreateRoom_btn" Click="CreateRoom_btn_Click"  HorizontalAlignment="Right" BorderThickness="0.1"   Height="60" Margin="15 10 30 10"  Background="Transparent" md:ButtonAssist.CornerRadius="10" Width="70" RenderTransformOrigin="0.514,0.458" >
 
                     <Grid>
                         <md:PackIcon Background="Transparent" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top"  Kind="Worker" Height="45" Width="45"/>

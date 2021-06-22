@@ -10,15 +10,17 @@
         Title="Login" Height="450" Width="800">
     <Grid Background="#1A313F">
 
-        <Image Source="/Image/login.jpg" Stretch="Fill" RenderTransformOrigin="0.968,0.572" >
+        <!--<Image Source="Image/" Stretch="Fill" RenderTransformOrigin="0.968,0.572" >
        
         
         
         
-        </Image>
+        </Image>-->
+<Image Source="/Image/login.jpg" />
 
         <Border Background="#011D2B" Opacity="0.8" BorderThickness="8" BorderBrush="#0C4395" Width="500" Height="370" CornerRadius="15">
             <StackPanel >
+                
                 <TextBlock Text="Login" FontSize="32" Foreground="Snow" HorizontalAlignment="Center" Margin="0 30 0 0 " Width="150" TextAlignment="Center"/>
 
                 <Border CornerRadius="10 "  Background="#2A4671" Margin="45 45 45 0">

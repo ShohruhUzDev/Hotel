@@ -24,5 +24,13 @@ namespace Hotel_interfeys.UserControls
         {
             InitializeComponent();
         }
+
+        private void CreateRoom_btn_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeCreate employeeCreate = new EmployeeCreate();
+            employeeCreate.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Hide();
+        }
     }
 }
