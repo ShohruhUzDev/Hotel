@@ -24,5 +24,19 @@ namespace Hotel_interfeys
         {
             InitializeComponent();
         }
+
+        private void Save_btn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
+        }
     }
 }

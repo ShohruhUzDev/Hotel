@@ -24,5 +24,10 @@ namespace Hotel_interfeys.UserControls
         {
             InitializeComponent();
         }
+
+        private void CreateRoom_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

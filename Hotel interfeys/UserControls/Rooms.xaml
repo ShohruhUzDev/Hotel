@@ -11,13 +11,26 @@
     <Grid>
         <StackPanel Background="#FFFFFF">
             <DockPanel>
-                <Border CornerRadius="10 " Height="40" BorderThickness="1" BorderBrush="#E3ECEB" HorizontalAlignment="Left" Width="300" Background="Transparent" Margin="60 0 0 0 ">
+                <Button x:Name="CreateRoom_btn" Click="CreateRoom_btn_Click" HorizontalAlignment="Right" BorderThickness="0.1"   Height="60" Margin="15 10 30 10"  Background="Transparent" md:ButtonAssist.CornerRadius="10" Width="70" >
+
+                    <Grid>
+                        <md:PackIcon Background="Transparent" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top"  Kind="SeatFlat" Height="45" Width="45"/>
+                        <Border CornerRadius="10" Height="44" BorderThickness="0.1" Width="50"  HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.704,0.585">
+                            <md:PackIcon  Kind="Plus" Background="Black"   Height="Auto"   Foreground="Snow"  RenderTransformOrigin="0.671,0.971" Margin="22,26,0,0" Width="21"/>
+
+                        </Border>
+
+                    </Grid>
+
+
+                </Button>
+                <Border CornerRadius="10 " Height="40" BorderThickness="1" BorderBrush="#E3ECEB" HorizontalAlignment="Left" Width="200" Background="Transparent" Margin="40 0 0 0 ">
                     <StackPanel Orientation="Horizontal">
 
                         <md:PackIcon HorizontalAlignment="Left" Kind="Search" Foreground="Black" Opacity="0.6" Height="25" Width="35"  Margin=" 10 10 0 0 "/>
 
 
-                        <TextBox  md:HintAssist.Hint="Xona" md:HintAssist.Foreground="Black" md:HintAssist.HintOpacity="0.4" FontSize="20" Foreground="Black" Width="350"  Background="Transparent"  VerticalContentAlignment="Center" Padding="1"  BorderThickness="0">
+                        <TextBox  md:HintAssist.Hint="Xona" md:HintAssist.Foreground="Black" md:HintAssist.HintOpacity="0.4" FontSize="20" Foreground="Black" Width="151"  Background="Transparent"  VerticalContentAlignment="Center" Padding="1"  BorderThickness="0">
 
                         </TextBox>
 
@@ -25,7 +38,7 @@
 
                 </Border>
 
-                <Border CornerRadius="10 " Height="40" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Width="100" Background="Transparent" Margin="90 20 20 20">
+                <Border CornerRadius="10 " Height="40" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Width="100" Background="Transparent" Margin="50 20 10 20">
 
 
                     <ComboBox md:HintAssist.Hint="etaj" md:HintAssist.Foreground="Black" md:HintAssist.HintOpacity="0.5" FontSize="13"   Width="70">
@@ -71,48 +84,13 @@
 
             </DockPanel>
 
-            <DataGrid Height="355" Margin="10 10 10 10" BorderThickness="1" BorderBrush="Black" >
-                <DataGrid.Columns  >
-                    <DataGridTextColumn Width="40" MinWidth="70">
-                        <DataGridTextColumn.Header >
-                            <TextBlock Text="№" FontSize="18"/>
-                        </DataGridTextColumn.Header>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Width="250" >
-                        <DataGridTextColumn.Header >
-                            <TextBlock Text="familiya" FontSize="18"/>
-                        </DataGridTextColumn.Header>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Width="300" >
-                        <DataGridTextColumn.Header >
-                            <TextBlock Text="sinflar" FontSize="18"/>
-                        </DataGridTextColumn.Header>
+            <DataGrid x:Name="RoomMyDataGrid" Height="355" Margin="10 10 10 10" BorderThickness="1" BorderBrush="Black" >
 
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Width="100" >
-                        <DataGridTextColumn.Header >
-                            <TextBlock Text="xona" FontSize="18"/>
-                        </DataGridTextColumn.Header>
-                    </DataGridTextColumn>
-                </DataGrid.Columns>
 
             </DataGrid>
 
 
-            <!--uqituvchi qushish btn-->
-            <Button HorizontalAlignment="Right" BorderThickness="0.1"   Height="60" Margin="15 10 30 10"  Background="Transparent" md:ButtonAssist.CornerRadius="10" Width="70" >
-
-                <Grid>
-                    <md:PackIcon Background="Transparent" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top"  Kind="Teacher" Height="45" Width="45"/>
-                    <Border CornerRadius="10" Height="45" BorderThickness="0.1" Width="45"  HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.704,0.585">
-                        <md:PackIcon  Kind="Plus" Background="Black"   Height="Auto"   Foreground="Snow"  RenderTransformOrigin="0.671,0.971" Margin="23,28,0,0" Width="21"/>
-
-                    </Border>
-
-                </Grid>
-
-
-            </Button>
+           
         </StackPanel>
     </Grid>
 </UserControl>

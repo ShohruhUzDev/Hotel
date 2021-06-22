@@ -96,6 +96,12 @@ namespace Hotel_interfeys
             Guests guests = new Guests();
             asosiy_oyna_grid.Children.Add(guests);
         }
+
+        private void Emoloyee_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Employee employee = new Employee();
+            asosiy_oyna_grid.Children.Add(employee);
+        }
     }
     
 }
