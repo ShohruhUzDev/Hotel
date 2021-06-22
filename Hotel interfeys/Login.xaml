@@ -10,7 +10,11 @@
         Title="Login" Height="450" Width="800">
     <Grid Background="#1A313F">
 
-        <Image Source="/Image/login.jpg" Stretch="Fill" >
+        <Image Source="/Image/login.jpg" Stretch="Fill" RenderTransformOrigin="0.968,0.572" >
+       
+        
+        
+        
         </Image>
 
         <Border Background="#011D2B" Opacity="0.8" BorderThickness="8" BorderBrush="#0C4395" Width="500" Height="370" CornerRadius="15">
@@ -38,8 +42,8 @@
 
                         </PasswordBox>
 
-                        <md:PackIcon Name="eye_pasbox"  Kind="Eye" Height="25" VerticalAlignment="Center" Foreground="Snow" Cursor="Hand" Width="30"/>
-                        <md:PackIcon HorizontalAlignment="Right" Kind="Lock" Height="35" Width="35" Foreground="Snow"  Margin=" 0 10 0 0 "/>
+                        <!--<md:PackIcon Name="eye_pasbox"  Kind="Eye" Height="25" VerticalAlignment="Center" Foreground="Snow" Cursor="Hand" Width="30"/>-->
+                        <md:PackIcon Kind="Lock" Height="35" Width="100" Foreground="Snow"  Margin=" 0 10 0 0 "/>
 
 
                     </StackPanel>
@@ -57,7 +61,7 @@
                         o'qituvchi
                     </ComboBoxItem>
                 </ComboBox>-->
-                <Button x:Name="Kirish_btn" Click="Kirish_btn_Click"  md:ButtonAssist.CornerRadius="10" Margin="45 40 45 0" Height="45" Background="#0156CB" Content="Enter">
+                <Button x:Name="Kirish_btn" Click="Kirish_btn_Click" FontSize="30"  md:ButtonAssist.CornerRadius="10" Margin="45 40 45 0" Height="45" Background="#0156CB" Content="OK">
                 </Button>
             </StackPanel>
         </Border>
