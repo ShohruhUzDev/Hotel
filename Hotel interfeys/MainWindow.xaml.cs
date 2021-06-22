@@ -1,4 +1,5 @@
-﻿using Itenso.TimePeriod;
+﻿using Hotel_interfeys.UserControls;
+using Itenso.TimePeriod;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -72,7 +73,29 @@ namespace Hotel_interfeys
             Application.Current.Shutdown();
         }
 
-        // FillKalendar();
+        private void Registration_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
+        }
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Rooms_Click(object sender, RoutedEventArgs e)
+        {
+            Rooms rooms = new Rooms();
+            asosiy_oyna_grid.Children.Add(rooms);
+        }
+
+        private void Guests_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Guests guests = new Guests();
+            asosiy_oyna_grid.Children.Add(guests);
+        }
     }
+    
 }
