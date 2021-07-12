@@ -9,17 +9,17 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid >
-        <Grid.Background>
-            <ImageBrush ImageSource="Image/login.jpg" >
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="Image/5.png" >
                 
             </ImageBrush>
-        </Grid.Background>
-        <!--<Image Source="Image/login.jpg" Stretch="Fill" RenderTransformOrigin="0.968,0.572" >
+        </Grid.Background>-->
+        <Image Source="Image/5.png" Stretch="Fill" RenderTransformOrigin="0.968,0.572" >
        
         
         
         
-        </Image>-->
+        </Image>
 <!--<Image Source="/Image/login.jpg" />-->
 
         <Border Background="#011D2B" Opacity="0.8" BorderThickness="8" BorderBrush="#0C4395" Width="500" Height="370" CornerRadius="15">
